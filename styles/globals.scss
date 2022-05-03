@@ -5,6 +5,7 @@ body {
   background-color: #eee;
   color: #101010;
   width: 100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -25,6 +26,9 @@ a {
 
 .container {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100vh;
   font-size: 150%;
