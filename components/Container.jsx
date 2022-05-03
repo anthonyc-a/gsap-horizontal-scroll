@@ -49,7 +49,7 @@ const Container = () => {
     });
   }, []);
   return sections.map(({ title }) => (
-    <div className="container" ref={addToRefs}>
+    <div className="container" ref={addToRefs} key={title}>
       {title}
     </div>
   ));
