@@ -23,7 +23,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 400vw;
+  min-width: 400vw;
 }
 
 .container {
@@ -39,6 +39,9 @@ a {
           align-items: center;
   width: 100vw;
   height: 100vh;
+  max-height: -webkit-fill-available;
+  max-height: -moz-available;
+  max-height: stretch;
   font-size: 150%;
   font-weight: 700;
   text-transform: uppercase;
