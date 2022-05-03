@@ -21,7 +21,6 @@ const sections = [
 
 const App = () => {
   const ref = useRef();
-  console.log(ref.current);
   const revealRefs = useRef([]);
   revealRefs.current = [];
 
@@ -43,7 +42,7 @@ const App = () => {
           pin: true,
           scrub: 0.5,
           snap: 1 / (5 - 1),
-          end: `+=${ref.current.offsetWidth / 2 + ref.current.offsetHeight}`,
+          end: () => "+=" + ref.current.offsetWidth,
           markers: true,
         },
       });
