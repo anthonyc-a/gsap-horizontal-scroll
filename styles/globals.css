@@ -23,7 +23,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 400vw;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .container {

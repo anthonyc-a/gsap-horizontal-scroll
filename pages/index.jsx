@@ -42,7 +42,8 @@ const App = () => {
           pin: true,
           scrub: 0.5,
           snap: 1 / (5 - 1),
-          end: () => "+=" + ref.current.offsetWidth,
+          start: "top top",
+          end: () => `+=${ref.current.offsetWidth}`,
           markers: true,
         },
       });
@@ -52,10 +53,9 @@ const App = () => {
   return (
     <div className="App">
       <div className="page-container" ref={ref}>
-        {sections.map(({ title, subtitle }) => (
+        {sections.map(({ title }) => (
           <div className="container" key={title} ref={addToRefs}>
             <h2>{title}</h2>
-            <p>{subtitle}</p>
           </div>
         ))}
       </div>
