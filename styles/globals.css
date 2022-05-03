@@ -39,9 +39,9 @@ a {
           align-items: center;
   width: 100vw;
   height: 100vh;
-  max-height: -webkit-fill-available;
-  max-height: -moz-available;
-  max-height: stretch;
+  min-height: -webkit-fill-available;
+  min-height: -moz-available;
+  min-height: stretch;
   font-size: 150%;
   font-weight: 700;
   text-transform: uppercase;
